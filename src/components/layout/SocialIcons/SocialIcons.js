@@ -1,0 +1,20 @@
+import React from 'react'
+import {SocialIcon} from 'react-social-icons';
+import './SocialIcon.css';
+const SocialIcons = () => {
+  return (
+    <ul>
+        <li>
+        <SocialIcon id='media-icon' url='https://www.facebook.com/alex.g.ha'></SocialIcon>
+        </li>
+        <li>
+        <SocialIcon id='media-icon' url='https://github.com/almondjoys'></SocialIcon>
+        </li>
+        <li>
+        <SocialIcon id='media-icon' url='https://www.linkedin.com/in/alexha415/'></SocialIcon>
+        </li>
+    </ul>
+  )
+}
+
+export default SocialIcons

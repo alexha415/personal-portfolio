@@ -1,0 +1,17 @@
+.card:hover{
+  opacity: 1;
+}
+.card{
+  background-color: white;
+  opacity: .6;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-body{
+  background-color: white
+}
+.card-header{
+  background-color: grey
+}
+.card-footer{
+  background-color: grey
+}

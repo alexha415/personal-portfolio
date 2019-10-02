@@ -1,0 +1,17 @@
+
+.App {
+  background-image: url(dark-sky.jpg); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  min-height: 100vh;
+  height: 100%;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 2em;
+}
