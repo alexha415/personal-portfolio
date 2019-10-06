@@ -5,7 +5,6 @@ ul {
 }
 li {
   display: inline-block;
-  margin: 5px;
 }
 #nav-link {
   text-decoration: none;
