@@ -17,7 +17,7 @@ function App() {
             <Route exact path ='/projects' component={Projects}/>
             <Route exact path ='/resume' component={Home}/>
           </Switch>
-        <div  className="row justify-content-center pb-3 pt-3">
+        <div  className="row justify-content-center footer">
           <SocialIcons/>
         </div> 
       </div>

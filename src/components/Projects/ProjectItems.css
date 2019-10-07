@@ -2,18 +2,63 @@
   opacity: 1;
 }
 .card{
-  background-color: white;
+  background-color: #fff;
   opacity: .6;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  display: flex;
-  flex-wrap: wrap;
-}
-.card-body{
-  background-color: white
+  box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, 0.2), 0 .6rem 2rem 0 rgba(0, 0, 0, 0.19);
+  margin-top: 2rem;
 }
 .card-header{
-  background-color: grey
+  background-color: grey;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+.card-body{
+  background-color: #fff;
+  font-size: 1.4rem
 }
 .card-footer{
-  background-color: grey
+  text-align: start;
+}
+.project-type-icon{
+  margin-left: auto;
+}
+.card:hover{
+  animation: moveUp .5s forwards;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4)
+}
+
+.col{
+  margin-bottom: 2rem;
+}
+
+.github-btn{
+  background-color: white;
+  border: .1rem solid black;
+  display: inline-block;
+  font-size: 1rem;
+  max-width: 33%;
+}
+.github-btn:hover{
+  background-color: lightgrey;
+}
+@keyframes moveUp{
+  0%{
+    transform: translateY(0);
+  }
+
+  100%{
+    transform: translateY(-1rem);
+  }
+}
+@media screen and (max-width: 250px){
+  .card{
+    padding: 0px;
+    
+  }
+  .card-body{
+    display: none;
+  }
+  .card-footer{
+  }
 }
