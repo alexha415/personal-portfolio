@@ -10,7 +10,11 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Header style={{marginBottom: '50px'}}/>
+        <div className="row">
+          <div className="col col-md-12">
+            <Header style={{marginBottom: '50px'}}/>
+          </div>
+        </div>
           <Switch>
             <Route exact path ='/' component={Home}/>
             <Route exact path ='/contact' component={Home}/>

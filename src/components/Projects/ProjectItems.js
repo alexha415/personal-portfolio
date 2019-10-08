@@ -16,7 +16,7 @@ const ProjectItems = () => {
             <p className="card-text text-dark">Android app using Google's geolocation api to track user movement. Relays useful information back to the user. Allows the user to route places to go and lets them log the information.</p>
           </div>
           <div className="card-footer">
-            <a href="#" className="btn btn-block github-btn">More</a>
+            <a href="https://github.com/almondjoys/SpeedBuddy" target="_blank" className="btn btn-block github-btn">More</a>
           </div>
         </div>
       </div>
@@ -30,7 +30,7 @@ const ProjectItems = () => {
             <p className="card-text text-dark">This website you are currently viewing. It is a frontend website built using React. I use this to display projects that I have completed or am currently working on.</p>
           </div>
           <div className="card-footer">
-            <a href="#" className="btn btn-block github-btn">More</a>
+            <a href="https://github.com/almondjoys/personal-portfolio" target="_blank"className="btn btn-block github-btn">More</a>
           </div>
         </div>
       </div>

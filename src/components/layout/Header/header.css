@@ -1,16 +1,23 @@
 ul {
   list-style-type: none;
-  margin: 0px;
+  margin: 2rem;
   padding: 0px;
+  float: right;
+  border: 2px solid white;
+  border-radius: 100rem;
 }
 li {
   display: inline-block;
+  margin: 2rem;
+  border-right: 1px solid white;
+  box-sizing: border-box;
 }
-#nav-link {
-  text-decoration: none;
+.header__link {
   font-size: 2rem;
+  color: #fff;
 }
 
-#nav-link:hover{
-  color: grey
+.header__link:hover{
+  text-decoration: none;
+  color: lightgrey;
 }

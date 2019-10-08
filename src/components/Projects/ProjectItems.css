@@ -1,9 +1,6 @@
-.card:hover{
-  opacity: 1;
-}
 .card{
   background-color: #fff;
-  opacity: .6;
+  opacity: 1;
   box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, 0.2), 0 .6rem 2rem 0 rgba(0, 0, 0, 0.19);
   margin-top: 2rem;
 }
@@ -23,11 +20,6 @@
 .project-type-icon{
   margin-left: auto;
 }
-.card:hover{
-  animation: moveUp .5s forwards;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4)
-}
-
 .col{
   margin-bottom: 2rem;
 }
@@ -59,6 +51,16 @@
   .card-body{
     display: none;
   }
-  .card-footer{
+}
+
+@media screen and (min-width: 720px){
+  .card{
+    opacity: .8;
+    
+  }
+  .card:hover{
+    animation: moveUp .5s forwards;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4);
+    opacity: 1;
   }
 }
