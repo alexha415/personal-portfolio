@@ -5,4 +5,26 @@
 }
 .media-icon:hover{
   opacity: .8;
+  animation: scaleLarger .2s forwards;
+}
+
+ul{
+  list-style-type: none;
+  margin: 2rem;
+  padding: 0px;
+  float: right;
+}
+
+li{
+  display: inline-block;
+  margin: .5rem;
+}
+
+@keyframes scaleLarger{
+  0%{
+    transform: scale(1.0);
+  }
+  100%{
+    transform: scale(1.2);
+   }
 }

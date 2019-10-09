@@ -3,6 +3,7 @@ import './App.css';
 import Home from './components/pages/Home';
 import Header from './components/layout/Header/Header';
 import Projects from './components/pages/Projects';
+import Resume from'./components/pages/Resume';
 import SocialIcons from './components/layout/SocialIcons/SocialIcons';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
@@ -17,9 +18,9 @@ function App() {
         </div>
           <Switch>
             <Route exact path ='/' component={Home}/>
-            <Route exact path ='/contact' component={Home}/>
+            <Route exact path ='/home' component={Home}/>
             <Route exact path ='/projects' component={Projects}/>
-            <Route exact path ='/resume' component={Home}/>
+            <Route exact path ='/resume' component={Resume}/>
           </Switch>
         <div  className="row justify-content-center footer">
           <SocialIcons/>

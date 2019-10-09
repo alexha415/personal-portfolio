@@ -1,15 +1,15 @@
 import React, {Fragment} from 'react'
 
 const Home = () => {
-  const alex = require('../../alex.jpg');
+  const alex = require('../../images/alex.jpg');
   return (
     <div className='row mr-0'>
       <div className="col text-center">
-        <h4 className="text-light" style={{fontSize: '8rem'}}>Alex Ha</h4>
+        <h4 className="name-header">Alex Ha</h4>
         <br/>
-        <img src={alex} alt="Alex Ha" className="border rounded-circle mb-5"/>
+        <img src={alex} alt="Alex Ha" className="portrait"/>
         <br/>
-        <p className="text-center text-light" style={{fontSize: '2rem', margin:'0% 10%'}}>         
+        <p className="description">         
               I am a frontend Node.js engineer looking for an entry-level position. I graduated from San Francisco State University in May of 2019. I am currently learning REST API's with python as well as Express. Some of my skills involve, HTML, JavaScript, CSS, and React. I am looking for a great environment to polish my skills and grow my programming knowledge even more. 
       </p>
       </div>

@@ -5,7 +5,7 @@
   margin-top: 2rem;
 }
 .card-header{
-  background-color: grey;
+  background-color: white;
   font-size: 2rem;
   display: flex;
   align-items: center;
@@ -26,13 +26,16 @@
 
 .github-btn{
   background-color: white;
-  border: .1rem solid black;
+  border: .1rem solid rgb(0, 110, 255);
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.5rem;
   max-width: 33%;
+  color: white;
+  background-color: rgb(0, 110, 255);
 }
 .github-btn:hover{
-  background-color: lightgrey;
+  background-color:white;
+  color: rgb(0, 110, 255);
 }
 @keyframes moveUp{
   0%{
