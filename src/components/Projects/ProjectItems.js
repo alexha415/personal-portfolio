@@ -41,7 +41,7 @@ const ProjectItems = () => {
             <i className='fa fa-chrome fa-2x project-type-icon'/>
           </div>
           <div className="card-body text-left">
-            <p className="card-text text-dark">A website for Magic: The Gathering enthusiasts. With a heavy focus on the popular format "Elder Dragon Highlander", this website helps users build and prototype decks that are specific to this format. (WIP)</p>
+            <p className="card-text text-dark">A website for Magic: The Gathering enthusiasts. With a heavy focus on the popular format "Elder Dragon Highlander", this website helps users build and prototype decks that are specific to this format. I worked on this project using a MERN stack.(WIP)</p>
           </div>
           <div className="card-footer">
             <a href="https://github.com/almondjoys/edhblocks" target="_blank"className="btn btn-block github-btn">More</a>
