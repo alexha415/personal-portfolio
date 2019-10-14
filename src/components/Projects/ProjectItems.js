@@ -6,7 +6,7 @@ const ProjectItems = () => {
 
   return (
     <div className="row">
-      <div className=" col col-md-4 offset-md-2">
+      <div className=" col col-md-3 offset-md-1">
         <div className="card h-100">
           <div class="card-header">
             <strong>Divvy</strong>
@@ -20,7 +20,7 @@ const ProjectItems = () => {
           </div>
         </div>
       </div>
-      <div className="col col-md-4">
+      <div className="col col-md-3">
         <div className="card h-100">
           <div class="card-header">
             <strong>Portfolio</strong>
@@ -34,7 +34,7 @@ const ProjectItems = () => {
           </div>
         </div>
       </div>
-      <div className="col col-md-4">
+      <div className="col col-md-3">
         <div className="card h-100">
           <div class="card-header">
             <strong>EDHBlocks</strong>
