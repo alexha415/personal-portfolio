@@ -3,7 +3,7 @@ import React, {Fragment} from 'react'
 const Home = () => {
   const alex = require('../../images/alex.jpg');
   return (
-    <div className='home row mr-0'>
+    <div id= 'home' className='home row mr-0'>
       <div className="col text-center">
         <h4 className="name-header">Alex Ha</h4>
         <br/>

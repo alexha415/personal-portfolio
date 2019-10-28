@@ -12,15 +12,14 @@ function App() {
     <Router>
       <div className="App">
         <div className="row">
-          <div className="col col-md-12 header">
+          <div className="flex-row header">
+            <span className='header-label'>Home</span>
+            <SocialIcons/>
             <Header/>
           </div>
         </div>
           <Home/>
           <Projects/>
-        <div className="footer">
-          <SocialIcons/>
-        </div> 
       </div>
     </Router>
   );

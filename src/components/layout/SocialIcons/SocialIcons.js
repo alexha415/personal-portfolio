@@ -3,7 +3,7 @@ import {SocialIcon} from 'react-social-icons';
 import './SocialIcon.css';
 const SocialIcons = () => {
   return (
-    <ul>
+    <ul className = 'social-icons'>
         <li>
         <SocialIcon className='media-icon' url='https://www.facebook.com/alex.g.ha'></SocialIcon>
         </li>

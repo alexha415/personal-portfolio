@@ -1,17 +1,21 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
 import './header.css';
-const Header = () => {
+const Header = ({handleNavigation}) => {
+  const onClick = (e) => {
+    //e.preventDefault();
+    //handleNavigation(e.target.name);
+  }
   return (
       <ul className="nav-bar">
         <li className='nav-bar-item'>
-          <Link to='/home' className='header__link'>Home</Link>
+          <a href="#home" className='header__link' name ='home' onClick={onClick}>Home</a>
         </li>
         <li className='nav-bar-item'>
-          <Link to='/projects' className='header__link'>Projects</Link>
+          <a href="#projects" className='header__link' name='projects' onClick={onClick}>Projects</a>
         </li>
         <li className='nav-bar-item'>
-          <Link to='/resume' className='header__link'>Resume</Link>
+          <a href=".resume"className='header__link' name='resume' onClick={onClick}>Resume</a>
         </li>
       </ul>
   )
