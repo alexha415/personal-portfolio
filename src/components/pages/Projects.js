@@ -3,7 +3,7 @@ import Header from '../layout/Header/Header';
 import ProjectItems from '../Projects/ProjectItems';
 const Projects = () => {
   return (
-    <div className="row">
+    <div className="projects row">
       <div className="col text-center">
         <ProjectItems/>
       </div>

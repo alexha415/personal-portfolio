@@ -12,17 +12,13 @@ function App() {
     <Router>
       <div className="App">
         <div className="row">
-          <div className="col col-md-12">
-            <Header style={{marginBottom: '50px'}}/>
+          <div className="col col-md-12 header">
+            <Header/>
           </div>
         </div>
-          <Switch>
-            <Route exact path ='/' component={Home}/>
-            <Route exact path ='/home' component={Home}/>
-            <Route exact path ='/projects' component={Projects}/>
-            <Route exact path ='/resume' component={Resume}/>
-          </Switch>
-        <div  className="row justify-content-center footer">
+          <Home/>
+          <Projects/>
+        <div className="footer">
           <SocialIcons/>
         </div> 
       </div>
