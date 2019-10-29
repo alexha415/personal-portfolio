@@ -1,9 +1,26 @@
-import React, {Fragment} from 'react'
+import React, {useRef, useEffect, useState} from 'react'
+
 
 const Home = () => {
+
+  const [fade, setFade] = useState('false');
+  const home = useRef(null);
+
+  const handleScroll = (e) => {
+    let boundingRect = home.current.getBoundingClientRect()
+    if(boundingRect.top > boundingRect.height - (boundingRect.height / 2) || boundingRect.bottom < 0 + (boundingRect.height /2)){
+      setFade(false);
+    }else{
+      setFade(true);
+    }
+  }
+  useEffect( () => {
+    window.addEventListener('scroll', handleScroll);
+    //eslint-ignore-next-line
+  },[]);
   const alex = require('../../images/alex.jpg');
   return (
-    <div id= 'home' className='home row mr-0'>
+    <div ref={home} id= 'home' className={`home row mr-0 ${fade ? 'section-fadeIn' : 'section-fadeOut'}`}>
       <div className="col text-center">
         <h4 className="name-header">Alex Ha</h4>
         <br/>

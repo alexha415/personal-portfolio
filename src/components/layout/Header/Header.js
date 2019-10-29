@@ -15,7 +15,7 @@ const Header = ({handleNavigation}) => {
           <a href="#projects" className='header__link' name='projects' onClick={onClick}>Projects</a>
         </li>
         <li className='nav-bar-item'>
-          <a href=".resume"className='header__link' name='resume' onClick={onClick}>Resume</a>
+          <a href="#resume"className='header__link' name='resume' onClick={onClick}>Resume</a>
         </li>
       </ul>
   )

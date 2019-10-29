@@ -18,8 +18,12 @@ function App() {
             <Header/>
           </div>
         </div>
-          <Home/>
+          <Home />
           <Projects/>
+          <Resume/>
+      </div>
+      <div className="footer">
+        <div className="nav-down"></div>
       </div>
     </Router>
   );

@@ -7,34 +7,30 @@
 }
 html{
   font-size: 62.5%;
-
   scroll-behavior: smooth;
 }
 body, #root, .App{
   min-height: 100vh;
   box-sizing: border-box;
-  min-width: 100vw;
-  scroll-behavior: smooth;
 }
-body, #root {
-  background-color: rgba(32, 69, 138, 1);
-}
-
 .App{
   position: relative;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  background-color: rgba(32, 69, 138, 1);
 }
 
 .home,.projects,.resume{
   padding-top: 6.5rem;
+  overflow: hidden;
 }
 
 .home, .projects, .resume{
   min-height: 100vh;
-  min-width: 100vw;
+  max-width: 100%;
 }
 
+.row{
+  margin: 0px;
+}
 
 .col{
   margin: 0px;
@@ -56,10 +52,23 @@ body, #root {
   bottom: 0;
   right: 0;
   width: 100%;
-  background-color: rgb(48, 45, 45);
   opacity: .8;
 }
-
+.nav-down{
+    height: 5rem;
+    width: 5rem;
+    border-width: 0rem .4rem .4rem 0rem;
+    border-color: white;
+    border-style: solid;
+    transform: rotate(45deg);
+    margin-bottom: 2rem;
+}
+.nav-down:hover{
+  border-color: grey;
+}
+.nav-down:active{
+  border-color: white;
+}
 .header{  
   position: fixed;
   top: 0;
@@ -146,4 +155,13 @@ body, #root {
   100%{
     transform: translateY(-100%);
   }
+}
+
+.section-fadeIn{
+  opacity: 1;
+  transition: 1.5s;
+}
+.section-fadeOut{
+  opacity:0;
+  transition: .5s;
 }
