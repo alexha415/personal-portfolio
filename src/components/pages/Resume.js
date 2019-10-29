@@ -10,7 +10,6 @@ const resume = useRef(null);
 
 const handleScroll = (e) => {
   let boundingRect = resume.current.getBoundingClientRect()
-  console.log(boundingRect.bottom, boundingRect.top, boundingRect.height);
   if(boundingRect.top > boundingRect.height - (boundingRect.height / 2) || boundingRect.bottom < 0 + (boundingRect.height / 1.5)){
     setFade(false);
   }else{
