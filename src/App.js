@@ -12,7 +12,6 @@ function App() {
   const app = useRef(null);
 
   return (
-    <Router>
       <div ref={app} className="App">
         <div className="row">
           <div className="flex-row header">
@@ -26,7 +25,6 @@ function App() {
           <Resume/>
       </div>
       <Footer app={app}/>
-    </Router>
   );
 }
 
