@@ -1,6 +1,6 @@
 import React, {Fragment, useEffect, useState, useRef} from 'react'
-import Header from '../layout/Header/Header';
 import ProjectItems from '../Projects/ProjectItems';
+import styles from './projects.module.css';
 const Projects = () => {  
   
   const [fade, setFade] = useState('false');
@@ -22,8 +22,9 @@ useEffect( () => {
 },[]);
 
   return (
-    <div ref={projects} id='projects' className={`projects row ${fade ? 'section-fadeIn' : 'section-fadeOut'}`}>
-      <div className="col text-center">
+    <div ref={projects} id={`projects`} className={`section ${styles.projects}`}>
+      <h4 className = {styles.header}>Projects</h4>
+      <div className={`${fade ? 'section-fadeIn' : 'section-fadeOut'}`}>
         <ProjectItems/>
       </div>
     </div>

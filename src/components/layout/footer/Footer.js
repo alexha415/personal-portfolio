@@ -1,10 +1,11 @@
 import React, {useState, useEffect, useRef} from 'react'
+import styles from './footer.module.css'
 
-const Footer = ({app}) => {
+const Footer = ({home}) => {
   const [breakpoints, setBreakpoints] = useState([]);
   const footer = useRef(null);
   useEffect( () => {
-    let children = Array.from(app.current.children);
+    let children = Array.from(home.current.children);
     children.shift();
     let totalHeight = 0;
     
@@ -30,8 +31,8 @@ const Footer = ({app}) => {
 
   }
   return (
-    <div ref={footer} className="footer">
-      <a href = {``} className="nav-down" onClick={onClick}></a>
+    <div ref={footer} className={styles.footer}>
+      <a className={styles.navDown} onClick={onClick}/>
     </div>
   )
 }

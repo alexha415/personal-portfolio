@@ -1,0 +1,26 @@
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: 5%;
+  right: 0;
+  width: 100%;
+  opacity: .8;
+}
+.navDown{
+  height: 5rem;
+  width: 5rem;
+  border-width: 0rem .4rem .4rem 0rem;
+  border-color: white;
+  border-style: solid;
+  transform: rotate(45deg);
+  margin-bottom: 2rem;
+}
+.navDown:hover{
+border-color: grey;
+}
+.navDown:active{
+border-color: white;
+}

@@ -1,0 +1,24 @@
+.header{
+  display: inline-block;
+  font-size: 5rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  border-bottom: 3px solid white;
+  text-shadow: .5rem .5rem 1rem black;
+}
+.list{
+  list-style-type: none;
+  color:white;
+  font-size: 2rem;
+  background-color: rgb(48, 45, 45);
+  border: .5rem solid white;
+  box-shadow:.2rem .2rem 1rem black;
+  padding: 2rem;
+  margin-bottom: 5rem;
+}
+.list:last-child{
+  margin-bottom: 0rem;
+}
+.resume {
+  padding: 10rem 2rem 0rem 2rem;
+}

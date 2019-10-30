@@ -1,0 +1,28 @@
+.header{
+  font-family: 'Roboto', sans-serif;
+  font-size: 8rem;
+  color: white;
+  text-shadow: .5rem .5rem 1rem black;
+  animation: moveInTop 1s;
+}
+
+.portrait{
+  border-radius: 100rem;
+  box-shadow: 0rem .5rem 2rem rgb(0, 0, 0);
+  margin-bottom: 5rem;
+  animation: fadeIn 1.5s ease-in;
+}
+
+.description{
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  margin: 0 10%;
+  color: white;
+  font-weight: 300;
+  animation: fadeIn 1.5s;
+  animation: moveInBottom 1s;
+  text-align: center;
+}
+.about{
+  align-items: center;
+}

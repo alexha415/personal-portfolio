@@ -16,107 +16,23 @@ body, #root, .App{
 }
 .App{
   position: relative;
-  background-color: rgba(32, 69, 138, 1);
 }
 
-.home,.projects,.resume{
+.section {
+  min-height: 100vh;
+  max-width: 100%;
   padding-top: 6.5rem;
   overflow: hidden;
 }
-
-.home, .projects, .resume{
-  min-height: 100vh;
-  max-width: 100%;
-}
-.row{
-  margin: 0px;
-}
-
-.col{
-  margin: 0px;
-  padding: 0px;
-}
-
 .flex-row{
-  width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  position: relative;
 }
-.footer{
+.flex-col{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  position: fixed;
-  bottom: 5%;
-  right: 0;
-  width: 100%;
-  opacity: .8;
-}
-.nav-down{
-    height: 5rem;
-    width: 5rem;
-    border-width: 0rem .4rem .4rem 0rem;
-    border-color: white;
-    border-style: solid;
-    transform: rotate(45deg);
-    margin-bottom: 2rem;
-}
-.nav-down:hover{
-  border-color: grey;
-}
-.nav-down:active{
-  border-color: white;
-}
-.header{  
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: rgb(48, 45, 45);
-  z-index: 1;
-  box-shadow: 0rem .2rem .5rem black;
-}
-.header-label{
-  font-size: 3.5rem;
-  color: white;
-  font-family: 'Roboto', sans-serif;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 100%;
-  padding: 0rem 2rem;
-  background-color: rgb(65, 64, 64);
-  color: white;
-  line-height: 7rem;
-}
-.portrait{
-  border-radius: 100rem;
-  box-shadow: 0rem .5rem 2rem rgb(0, 0, 0);
-  margin-bottom: 5rem;
-  animation: fadeIn 1.5s ease-in;
 }
 
-.name-header{
-  font-family: 'Roboto', sans-serif;
-  font-size: 8rem;
-  color: white;
-  text-shadow: .5rem .5rem 1rem black;
-  animation: moveInTop 1s;
-}
-
-.description{
-  font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
-  margin: 0 10%;
-  color: white;
-  font-weight: 300;
-  animation: fadeIn 1.5s;
-  animation: moveInBottom 1s;
-}
-.move-up{
-  animation: navUp 1s ease-out;
-}
 @keyframes fadeIn {
   0%{
     opacity: 0;
@@ -161,32 +77,8 @@ body, #root, .App{
   opacity: 1;
   transition: 1.5s;
 }
+
 .section-fadeOut{
   opacity:0;
   transition: .5s;
-}
-
-.resume-header{
-  display: inline-block;
-  font-size: 5rem;
-  font-family: "Roboto", sans-serif;
-  color: white;
-  border-bottom: 3px solid white;
-  text-shadow: .5rem .5rem 1rem black;
-}
-.resume-list{
-  list-style-type: none;
-  color:white;
-  font-size: 2rem;
-  background-color: rgb(48, 45, 45);
-  border: .5rem solid white;
-  box-shadow:.2rem .2rem 1rem black;
-  padding: 2rem;
-  margin-bottom: 5rem;
-}
-.resume-list:last-child{
-  margin-bottom: 0rem;
-}
-.resume {
-  padding: 10rem 2rem 0rem 2rem;
 }
