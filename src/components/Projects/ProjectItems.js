@@ -4,8 +4,17 @@ import styles from './ProjectItems.module.css';
 const ProjectItems = () => {
 
   return (
-    <div>
-      <div className={styles.projectItem}>
+    <div className={styles.projects}>
+      <div className={`${styles.projectItem} flex-row`}>
+        <div className={`${styles.cardLeft}`}>
+          <img src={require('../../images/alex.jpg')} alt=""/>
+        </div>
+        <div className={`${styles.cardRight} flex-col`}>
+          <h4>Test Title</h4>
+          <p className={styles.cardText}>Android app with a large focus on Object Oriented Design, in both UI and API. Users are able to coordinate to split costs of living expenses and services which allow sharing subscriptions.</p>
+        </div>
+      </div>
+      <div className={`${styles.projectItem} flex-row`}>
         <div className={styles.card}>
           <div class={styles.cardHeader}>
             <strong>Divvy</strong>
