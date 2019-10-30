@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React, {Fragment, useEffect, useRef} from 'react';
 import './App.css';
 import Home from './components/pages/Home';
 import Header from './components/layout/Header/Header';
@@ -12,6 +12,7 @@ function App() {
   const app = useRef(null);
 
   return (
+  <Fragment>
       <div ref={app} className="App">
         <div className="row">
           <div className="flex-row header">
@@ -25,6 +26,7 @@ function App() {
           <Resume/>
       </div>
       <Footer app={app}/>
+    </Fragment>
   );
 }
 
