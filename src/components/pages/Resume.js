@@ -1,6 +1,4 @@
 import React, {useState, useRef, useEffect} from 'react'
-import { pdfjs } from 'react-pdf';
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const Resume = () => {
   const [fade, setFade] = useState('false');
