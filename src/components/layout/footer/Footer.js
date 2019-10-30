@@ -12,19 +12,14 @@ const Footer = ({app}) => {
       let height = Math.ceil(childElement.getBoundingClientRect().height)
       totalHeight += height;
       height = totalHeight - height;
-      console.log(totalHeight);
       return height;
     })
-    console.log(heightBreakpoints)
     setBreakpoints(heightBreakpoints);
   },[])
 
   const onClick = (e) => {
-    console.log(breakpoints);
-    console.log(window.scrollY);
     e.preventDefault();
     let pageTop = Math.ceil(window.scrollY);
-    console.log(pageTop);
     for(let i = 0; i < breakpoints.length; i++){
       let point = breakpoints[i];
       if(pageTop < point){

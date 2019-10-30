@@ -8,7 +8,7 @@ const ProjectItems = () => {
     <div className="row justify-content-center">
       <div className="project-item col col-md-3 offset-md-1 mr-3">
         <div className="card h-100">
-          <div class="card-header">
+          <div className="card-header">
             <strong>Divvy</strong>
             <i className='fa fa-mobile fa-2x project-type-icon'/>
           </div>
@@ -22,7 +22,7 @@ const ProjectItems = () => {
       </div>
       <div className="project-item col col-md-3 mr-3">
         <div className="card h-100">
-          <div class="card-header">
+          <div className="card-header">
             <strong>Portfolio</strong>
             <i className='fa fa-chrome fa-2x project-type-icon'/>
           </div>
@@ -36,7 +36,7 @@ const ProjectItems = () => {
       </div>
       <div className="project-item col col-md-3">
         <div className="card h-100">
-          <div class="card-header">
+          <div className="card-header">
             <strong>EDHBlocks</strong>
             <i className='fa fa-chrome fa-2x project-type-icon'/>
           </div>
