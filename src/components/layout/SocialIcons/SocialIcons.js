@@ -4,13 +4,13 @@ import './SocialIcon.css';
 const SocialIcons = () => {
   return (
     <ul className = 'social-icons'>
-        <li>
+        <li className="icon-list-item">
         <SocialIcon className='media-icon' url='https://www.facebook.com/alex.g.ha'></SocialIcon>
         </li>
-        <li>
+        <li className="icon-list-item">
         <SocialIcon className='media-icon' url='https://github.com/almondjoys'></SocialIcon>
         </li>
-        <li>
+        <li className="icon-list-item">
         <SocialIcon className='media-icon' url='https://www.linkedin.com/in/alexha415/'></SocialIcon>
         </li>
     </ul>

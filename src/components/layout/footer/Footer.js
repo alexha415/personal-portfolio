@@ -9,22 +9,27 @@ const Footer = ({app}) => {
     let totalHeight = 0;
     
     let heightBreakpoints = children.map(childElement => {
-
       let height = Math.ceil(childElement.getBoundingClientRect().height)
       totalHeight += height;
+      height = totalHeight - height;
       console.log(totalHeight);
-      return totalHeight;
+      return height;
     })
     console.log(heightBreakpoints)
     setBreakpoints(heightBreakpoints);
   },[])
+
   const onClick = (e) => {
+    console.log(breakpoints);
+    console.log(window.scrollY);
     e.preventDefault();
-    let currentPosition = window.innerHeight + window.scrollY;
+    let pageTop = Math.ceil(window.scrollY);
+    console.log(pageTop);
     for(let i = 0; i < breakpoints.length; i++){
       let point = breakpoints[i];
-      if(currentPosition >= point && currentPosition <= breakpoints[i+1]){
-        window.scroll(0, point);
+      if(pageTop < point){
+        window.scroll(0, breakpoints[i]);
+        break;
       }
     }
 
