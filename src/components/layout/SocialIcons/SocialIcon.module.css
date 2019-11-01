@@ -19,6 +19,13 @@
   transform: translate(-50%,-50%);
 }
 
+@media screen and (max-width: 640px){
+  .socialIcons{  
+    left: 0%;
+    top: 0%;
+    transform: none;
+  }
+}
 .listItem{
   display: inline-block;
   margin: .5rem;

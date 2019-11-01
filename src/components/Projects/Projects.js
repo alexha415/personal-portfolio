@@ -9,7 +9,7 @@ const Projects = () => {
   const handleScroll = (e) => {
   let boundingRect = projects.current.getBoundingClientRect()
   
-  if(boundingRect.top > boundingRect.height - (boundingRect.height / 2) || boundingRect.bottom < 0 + (boundingRect.height /2)){
+  if(boundingRect.top > boundingRect.height - (boundingRect.height / 2) || boundingRect.bottom < 0 + (boundingRect.height / 3)){
     setFade(false);
   }else{
     setFade(true);

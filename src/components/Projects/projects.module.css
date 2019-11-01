@@ -6,3 +6,8 @@
   font-family: "Roboto", sans-serif;
   border-bottom: .3rem solid white;
 }
+@media screen and (max-width: 640px){
+  .projects{
+    text-align: center;
+  }
+}
