@@ -7,6 +7,8 @@
 }
 
 .portrait{
+  height: 30rem;
+  width: 30rem;
   border-radius: 100rem;
   box-shadow: 0rem .5rem 2rem rgb(0, 0, 0);
   margin-bottom: 5rem;
@@ -16,7 +18,7 @@
 .description{
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
-  margin: 0 10%;
+  margin: 0 10% 5rem 10%;
   color: white;
   font-weight: 300;
   animation: fadeIn 1.5s;
@@ -25,4 +27,28 @@
 }
 .about{
   align-items: center;
+  position: relative;
+  border-bottom: solid white;
+}
+.about::after{
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../images/bg.jpg');
+  background-position-x: right;
+  z-index: -1;
+  opacity: .9;
+}
+.section-fadeOut::after{
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../images/bg.jpg');
+  z-index: -1;
+  border: solid black;
+  opacity: .9;
 }

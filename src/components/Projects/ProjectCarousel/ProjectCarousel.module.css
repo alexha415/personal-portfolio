@@ -1,0 +1,38 @@
+.carouselContainer{
+  position: relative;
+}
+.carousel{
+  height: 50rem;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carouselItem{
+  display: inline-block;
+  background-color:white;
+  border: solid red;
+  height: 100%;
+  width: 100%;
+}
+.navigation{
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: 10%;
+  left: 50%;
+}
+.leftNav{
+  display: inline-block;
+  border: 1rem solid black;
+  border-radius: 10rem;
+  transition: none;
+}
+.rightNav{
+  margin-left: 2rem;
+  display: inline-block;
+  border: 1rem solid black;
+  border-radius: 10rem;
+  transition: none;
+}
+.leftNav:hover, .rightNav:hover{
+  border: 1rem solid grey;
+}

@@ -1,10 +1,13 @@
 import React from 'react'
 import styles from './ProjectItems.module.css';
+import ProjectCarousel from '../Projects/ProjectCarousel/ProjectCarousel';
 
 const ProjectItems = () => {
 
   return (
     <div className={styles.projects}>
+      
+      <ProjectCarousel/>
       <div className={`${styles.projectItem} flex-row`}>
         <div className={`${styles.cardLeft}`}>
           <img src={require('../../images/alex.jpg')} alt=""/>
@@ -33,7 +36,6 @@ const ProjectItems = () => {
       </div>
       <div className={`${styles.projectItem} flex-row`}>
         <div className={`${styles.cardLeft}`}>
-          <img src={require('../../images/alex.jpg')} alt=""/>
         </div>
         <div className={`${styles.cardRight} flex-col`}>
           <span className={`${styles.cardHeader}`}><h4>EDHBlocks</h4></span>

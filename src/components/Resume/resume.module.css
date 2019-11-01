@@ -5,20 +5,34 @@
   color: white;
   border-bottom: 3px solid white;
   text-shadow: .5rem .5rem 1rem black;
+  margin-bottom: 2rem;
 }
 .list{
+  font-family: "Roboto", sans-serif;
   list-style-type: none;
   color:white;
   font-size: 2rem;
-  background-color: rgb(48, 45, 45);
-  border: .5rem solid white;
   box-shadow:.2rem .2rem 1rem black;
   padding: 2rem;
   margin-bottom: 5rem;
+  text-shadow: .1rem .1rem .5rem black;
 }
 .list:last-child{
-  margin-bottom: 0rem;
+  margin-bottom: 2rem;
 }
 .resume {
   padding: 10rem 2rem 0rem 2rem;
+  position: relative;
+}
+.resume::after{
+  display: block;
+  content: "";
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../images/resume_bg.jpg');
+  z-index: -1;
+  opacity: .8;
 }

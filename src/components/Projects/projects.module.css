@@ -1,13 +1,31 @@
 .header{
   margin: 2rem;
   display: inline-block;
-  font-size: 3.5rem;
+  font-size: 5rem;
   color: white;
   font-family: "Roboto", sans-serif;
   border-bottom: .3rem solid white;
+  text-shadow: .2rem .2rem 1rem rgb(43, 43, 43);
 }
 @media screen and (max-width: 640px){
   .projects{
     text-align: center;
   }
+}
+
+.projects{
+  position: relative;
+  border-bottom: solid white;
+}
+.projects::after{
+  display: block;
+  content: "";
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../images/project.jpg');
+  z-index: -1;
+  opacity: .8;
 }

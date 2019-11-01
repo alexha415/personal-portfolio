@@ -17,7 +17,7 @@ useEffect( () => {
   //eslint-ignore-next-line
 },[]);
   return (
-    <div ref={resume} id = "resume" className={`${resume} section ${fade ? 'section-fadeIn' : 'section-fadeOut'}`}>
+    <div ref={resume} id = "resume" className={`${styles.resume} section ${fade ? 'section-fadeIn' : 'section-fadeOut'}`}>
       <h4 className={styles.header}>Education</h4>
       <ul className = {styles.list}>
         <li><span>San Francisco State University 2016 - 2019</span></li>
