@@ -1,25 +1,43 @@
 import React, {useState, useEffect, useRef} from 'react'
 import styles from './ProjectCarousel.module.css';
-
-const ProjectCarousel = () => {
+import {SocialIcon} from 'react-social-icons';
+import iconStyles from '../../layout/SocialIcons/SocialIcon.module.css';
+const ProjectCarousel = ({name, description, images, github}) => {
   const carouselEl = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [items, setItems] = useState([]);
   
   const onClick = (direction) => {
-    setCurrentIndex( (currentIndex + direction) % 3);
+    let newIndex = currentIndex + direction;
+    if(newIndex < 0) {
+      newIndex = 0;
+    }
+    if(newIndex > images.length){
+      newIndex = images.length;
+    }
+    setCurrentIndex(newIndex);
   }
 
   useEffect( () => {
-    console.log(carouselEl.current);
     carouselEl.current.scroll((currentIndex * carouselEl.current.clientWidth), 0);
   },[currentIndex]);
+
+
   return (
     <div className={`${styles.carouselContainer}`}>
-      <div ref={carouselEl} className={`${styles.carousel}`}>
-        <div className={`${styles.carouselItem}`}></div>
-        <div className={`${styles.carouselItem}`}></div>
-        <div className={`${styles.carouselItem}`}></div>
+      <div ref={carouselEl} className={`${styles.carousel} flex-row`}>
+        <div className={`${styles.carouselItem} ${styles.landing} flex-col`}>
+          <h4>{name}</h4>
+          <p className={styles.description}>{description}</p>
+          <SocialIcon className={iconStyles.mediaIcon} url={github}></SocialIcon>
+        </div>
+        {images.map(image => {
+            return (
+              <div key={image} className={`${styles.carouselItem} flex-col`}>
+                <img src={image} alt=""/>
+              </div>
+            )
+          })
+        }
       </div>
       <div className={`${styles.navigation}`}>
         <div className={`${styles.leftNav}`} onClick={() => {onClick(-1)}}>

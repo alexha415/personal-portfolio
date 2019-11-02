@@ -6,7 +6,6 @@ import Navbar from './Navbar';
 const Header = ({handleNavigation}) => {
   return (
     <div className={`flex-row ${styles.header}`}>
-      <span className={styles.label}>About</span>
       <Navbar/>
       <SocialIcons/>
     </div>
