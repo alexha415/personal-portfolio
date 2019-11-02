@@ -21,7 +21,7 @@ const MinNavbar = () => {
         <a href="#projects" className={styles.link} name='projects'>Projects</a>
       </li>
       <li className={styles.item}>
-        <a href="#resume"className={styles.link} name='resume'>Resume</a>
+        <a href="#resume" className={styles.link} name='resume'>Resume</a>
       </li>
     </ul>
     )
@@ -30,7 +30,7 @@ const MinNavbar = () => {
   
   return (
     <Fragment>
-      <a href="#" onClick={onClick} className={styles.smallNavbar}>
+      <a href="#/" onClick={onClick} className={styles.smallNavbar}>
         <i className='fa fa-bars fa-2x' onClick={onClick}></i>
       </a>
       {navLinks()}

@@ -13,17 +13,17 @@ const ProjectItems = () => {
           <p className={styles.cardText}>Android app with a large focus on Object Oriented Design, in both UI and API. Users are able to coordinate to split costs of living expenses and services which allow sharing subscriptions.
           </p>
           <div className={`${styles.cardFooter}`}>
-            <a href="https://github.com/sfsu-csc-668-spring-2019/term-project-divvy-team03" target="_blank" className={`btn btn-block ${styles.githubBtn}`}>Github</a>
+            <a href="https://github.com/sfsu-csc-668-spring-2019/term-project-divvy-team03" target="_blank" rel="noopener noreferrer" className={`btn btn-block ${styles.githubBtn}`}>Github</a>
           </div>
         </div>
       </div>
       <div className={`${styles.projectItem} flex-row`}>
         <div className={`${styles.cardRight} flex-col`}>
           <span className={`${styles.cardHeader}`}><h4>Portfolio</h4></span>
-          <p className={styles.cardText}>This website you are currently viewing. It is a frontend website built using React. I use this to display projects that I have completed or am currently working on.
+          <p className={styles.cardText}>This website you are currently viewing. It is a frontend website built using React. I use this to display projects that I have completed or am currently working on. 
           </p>
           <div className={`${styles.cardFooter}`}>
-            <a href="https://github.com/sfsu-csc-668-spring-2019/term-project-divvy-team03" target="_blank" className={`btn btn-block ${styles.githubBtn}`}>Github</a>
+            <a href="https://github.com/sfsu-csc-668-spring-2019/term-project-divvy-team03" target="_blank" rel="noopener noreferrer" className={`btn btn-block ${styles.githubBtn}`}>Github</a>
           </div>
         </div>
       </div>

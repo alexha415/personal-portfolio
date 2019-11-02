@@ -16,6 +16,7 @@ const Footer = ({home}) => {
       return height;
     })
     setBreakpoints(heightBreakpoints);
+    //eslint-disable-next-line
   },[])
 
   const onClick = (e) => {
@@ -32,7 +33,7 @@ const Footer = ({home}) => {
   }
   return (
     <div ref={footer} className={styles.footer}>
-      <a className={styles.navDown} onClick={onClick}/>
+      <div className={styles.navDown} onClick={onClick}/>
     </div>
   )
 }

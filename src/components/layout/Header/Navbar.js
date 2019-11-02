@@ -4,12 +4,9 @@ import MinNavbar from './MinNavbar';
 import styles from './header.module.css';
 const Navbar = () => {
   
-  const onClick = () => {
-    console.log('test');
-  }
   return (
     <span className={styles.navbar}>
-      <MinNavbar handleClick = {onClick}/>
+      <MinNavbar/>
       <ul className={`${styles.list} ${styles.largeNavbar}`}>
         <li className={styles.item}>
           <a href="#about" className={styles.link} name ='about'>About</a>

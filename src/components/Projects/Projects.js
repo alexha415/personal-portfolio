@@ -1,4 +1,4 @@
-import React, {Fragment, useEffect, useState, useRef} from 'react'
+import React, {useEffect, useState, useRef} from 'react'
 import ProjectItems from '../Projects/ProjectItems';
 import styles from './projects.module.css';
 const Projects = () => {  
