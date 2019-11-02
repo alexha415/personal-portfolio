@@ -15,7 +15,7 @@
 }
 .landing h4{
   font-size: 5rem;
-  font-family: Impact, Haettenschweiler, '', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: white;
 
 }
@@ -51,9 +51,14 @@
   transform: translateX(-50%);
   bottom: 5%;
   left: 50%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 .leftNav{
-  display: inline-block;
+  margin-right: auto;
+  margin-left: 2rem;
+  display:inline-block;
   transition: none;
   border-width: 0rem 0rem .5rem .5rem;
   border-color: white;
@@ -63,8 +68,9 @@
   width: 2rem;
 }
 .rightNav{
-  margin-left: 25rem;
-  display: inline-block;
+  display:inline-block;
+  margin-left: auto;
+  margin-right: 2rem;
   border-width: .5rem .5rem 0rem 0rem;
   border-color: white;
   border-style: solid;
@@ -75,4 +81,12 @@
 }
 .leftNav:hover, .rightNav:hover{
   border-color:rgba(41, 41, 41, 0.8);
+}
+@media screen and (max-width: 560px){
+  .landing h4{
+    font-size: 3.5rem;
+  }
+  .description{
+    font-size: 1.5rem;
+  }
 }
