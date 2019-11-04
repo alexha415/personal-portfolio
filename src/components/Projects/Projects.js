@@ -1,5 +1,5 @@
 import React, {useEffect, useState, useRef} from 'react'
-import ProjectItems from '../Projects/ProjectItems';
+import ProjectItems from './ProjectItems/ProjectItems';
 import styles from './projects.module.css';
 const Projects = () => {  
   

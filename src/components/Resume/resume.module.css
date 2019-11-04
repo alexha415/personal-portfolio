@@ -1,29 +1,5 @@
-.header{
-  display: inline-block;
-  width: fit-content;
-  font-size: 5rem;
-  font-family: "Roboto", sans-serif;
-  color: white;
-  border-bottom: 3px solid white;
-  text-shadow: .5rem .5rem 1rem black;
-  margin-bottom: 2rem;
-}
-.listContainer{
-  background-color: rgb(48,43,43);
 
-}
-.list{
-  list-style-type: none;
-  margin: 2rem;
-}
-.list li{
-  font-size: 2rem;
-  font-family: "Roboto", sans-serif;
-  color:white;
-  text-shadow: .1rem .1rem .5rem black;
-}
 .resume {
-  padding: 10rem 2rem 0rem 2rem;
   position: relative;
 }
 .resume::after{

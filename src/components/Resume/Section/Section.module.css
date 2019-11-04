@@ -1,0 +1,78 @@
+
+.section{
+  width: 50%;
+  margin-bottom: 2rem;
+  border-radius:.5rem;
+  padding: 1rem;
+}
+
+.card{
+  width: 100%;
+  opacity: .8;
+  border: .5rem solid transparent;
+  transition: .5s;
+}
+
+.cardHeader{
+  display: inline-block;
+  text-align: start;
+  padding: 1.3rem 2rem;
+  color: white;
+  background-color: rgba(34,34,34, .9);
+  border-bottom: .2rem solid white;
+}
+.cardHeader h4{
+  text-decoration: none;
+  color: white;
+  padding: .5rem 1rem;
+  display:inline-block;
+  font-family: "Roboto",sans-serif;
+  font-size: 3rem;
+  text-decoration: underline;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.section:hover .card{
+  transition: .5s;
+  transform: translateX(20%);
+  opacity: 1;
+  border: .5rem solid white;
+}
+.cardHeader h4:hover{
+  color: rgb(48, 43, 43);
+  user-select: none;
+  background-color: white;
+  transform: scale(1.1);
+  transition: .7s;
+  box-shadow: 5px 5px 10px black;
+}
+.cardBody{
+  background-color: rgba(34,34,34, .9);
+}
+
+.listContainer{
+  background-color: rgb(48,43,43);
+
+}
+.list{
+  list-style-type: none;
+  margin: 2rem;
+}
+.list li{
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  color:white;
+  text-shadow: .1rem .1rem .5rem black;
+}
+.list li:hover{
+  transition: .5s;
+  color: black;
+  background-color: white;
+  user-select: none;
+  text-shadow: .1rem .1rem .5rem grey;
+  transform: scale(1.1);
+}
+.listText{
+  white-space: nowrap;
+}

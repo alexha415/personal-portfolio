@@ -1,0 +1,16 @@
+
+@media screen and (max-width: 750px){
+  .projectItem{
+    width: 70%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .projects{
+    margin: 2rem 0rem;
+  }
+}
+@media screen and (max-width: 375px){
+  .projects{
+    margin: 2rem .5rem;
+  }
+}
