@@ -27,7 +27,7 @@ const About = () => {
         <img src={alex} alt="Alex Ha" className={styles.portrait}/>
         <br/>
         <p className={styles.description}>         
-              I am a frontend Node.js engineer looking for a front-end or full stack position in web development. I graduated from San Francisco State University in May of 2019. Some of my skills involve, HTML, JavaScript, CSS, and React. I am looking for a great environment to polish my skills and grow my programming knowledge even further. I am currently studying React, Flow, REST Apis, Express, CSS, and python.
+              I am a Frontend engineer looking for an Frontend or Fullstack entry-level position in web development. I graduated from San Francisco State University in May of 2019 with a Bachelors of Computer Science. Some of my skills involve, HTML, JavaScript, CSS, and React. I am looking for a great environment to polish my skills and grow my programming knowledge even further. I am currently studying React, Flow, REST APIs, Express, CSS, and Python.
       </p>
     </div>
   )

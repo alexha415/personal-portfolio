@@ -17,13 +17,15 @@
   margin-bottom: 2rem;
   border-radius:.5rem;
   opacity: .8;
-  transition: .5s;
   padding: 1rem;
-  border: .5rem solid transparent;
 }
-.projectItem:hover{
+.cardRight{
+  border: .5rem solid transparent;
+  transition: .5s;
+}
+.projectItem:hover .cardRight{
   opacity: 1;
-  transform:translateX(25%);
+  transform:translateX(15%);
   border: .5rem solid white;
 }
 .cardHeader{
@@ -35,7 +37,9 @@
   border-bottom: .2rem solid white;
   
 }
-.cardHeader h4{
+.cardHeader a{
+  text-decoration: none;
+  color: white;
   padding: .5rem 1rem;
   display:inline-block;
   font-family: "Roboto",sans-serif;
@@ -45,7 +49,7 @@
   text-transform: uppercase;
 }
 
-.cardHeader h4:hover{
+.cardHeader a:hover{
   color: rgb(48, 43, 43);
   cursor: pointer;
   background-color: white;
