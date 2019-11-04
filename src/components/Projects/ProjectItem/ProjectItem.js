@@ -3,7 +3,6 @@ import styles from './ProjectItem.module.css';
 import ProjectCarousel from '../ProjectCarousel/ProjectCarousel';
 const ProjectItem = ({title, github, description, images}) => {
 
-  console.log(images);
   const carousel = () => {
     if(images && images.length > 0) 
     return (

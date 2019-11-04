@@ -7,25 +7,24 @@ const Footer = ({home}) => {
   useEffect( () => {
     let children = Array.from(home.current.children);
     children.shift();
+    children.pop();
     let totalHeight = 0;
-    
     let heightBreakpoints = children.map(childElement => {
       let height = Math.ceil(childElement.getBoundingClientRect().height)
-      totalHeight += height;
-      height = totalHeight - height;
-      return height;
+      totalHeight += (height);
+      return totalHeight;
     })
-    setBreakpoints(heightBreakpoints);
+    setBreakpoints([0, 797, 2800]);
     //eslint-disable-next-line
   },[])
-
+  // [0, 797, 2800]
   const onClick = (e) => {
     e.preventDefault();
-    let pageTop = Math.ceil(window.scrollY);
+    let bottom = (window.scrollY + window.innerHeight);
     for(let i = 0; i < breakpoints.length; i++){
       let point = breakpoints[i];
-      if(pageTop < point){
-        window.scroll(0, breakpoints[i]);
+      if(bottom <= point){
+        window.scroll(0, point);
         break;
       }
     }

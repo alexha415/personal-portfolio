@@ -32,13 +32,6 @@
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-
-.section:hover .card{
-  transition: .5s;
-  transform: translateX(20%);
-  opacity: 1;
-  border: .5rem solid white;
-}
 .cardHeader h4:hover{
   color: rgb(48, 43, 43);
   user-select: none;
@@ -75,4 +68,23 @@
 }
 .listText{
   white-space: nowrap;
+}
+.section:hover .card{
+  transition: .5s;
+  opacity: 1;
+  border: .5rem solid white;
+}
+@media screen and (hover), (min-width: 881px){
+  .section:hover .card{
+    transform: translateX(20%);
+  }
+}
+@media screen and (max-width: 880px){
+  .section{
+    width: 100%;
+  }
+  
+.listText{
+  white-space: pre-wrap;
+}
 }
