@@ -74,11 +74,11 @@ body, #root, .App{
 }
 
 .section-fadeIn *{
+  transition: opacity .5s;
   opacity: 1;
-  transition: 1.3s;
 }
 
 .section-fadeOut *{
+  transition: opacity .5s;
   opacity:0;
-  transition: .5s;
 }

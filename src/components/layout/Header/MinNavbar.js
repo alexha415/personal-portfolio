@@ -8,7 +8,6 @@ const MinNavbar = () => {
   const onClick = (e) => {
     e.preventDefault();
     setActive(!active);
-    console.log(active);
   }
 
   const navLinks = () => {

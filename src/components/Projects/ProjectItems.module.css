@@ -1,99 +1,68 @@
 .card{
-  background-color: #fff;
   opacity: 1;
   box-shadow: 0 .4rem 1rem 0 rgba(0, 0, 0, 0.2), 0 .6rem 2rem 0 rgba(0, 0, 0, 1);
   margin-top: 2rem;
 }
-.cardHeader{
-  background-color: white;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid white;
-}
 .cardBody{
-  background-color: #fff;
   font-size: 1.4rem
 }
 .cardFooter{
   position: relative;
-  background-color: rgba(121, 118, 118, .8);
-  border-top: 1px solid white;
-}
-.cardText{
-  font-size: 10rem;
 }
 .typeIcon{
   margin-left: auto;
 }
 .projectItem{
+  width: 50%;
   margin-bottom: 2rem;
   border-radius:.5rem;
-  overflow: hidden;
-  box-shadow: 0 .4rem 1rem 0 rgba(0, 0, 0, 0.2), 0 .6rem 2rem 0 rgba(0, 0, 0, 1);
+  opacity: .8;
+  transition: .5s;
+  padding: 1rem;
+  border: .5rem solid transparent;
 }
-.cardRight{
-  width: 100%;
+.projectItem:hover{
+  opacity: 1;
+  transform:translateX(25%);
+  border: .5rem solid white;
 }
-.cardRight h4{
-  flex: .5 .5 auto;
-}
-.cardRight span{
+.cardHeader{
+  display: inline-block;
   text-align: start;
-  font-size: 2rem;
-  font-family: "Roboto",sans-serif;
-  padding: .5rem 2rem;
+  padding: 1.3rem 2rem;
   color: white;
-  background-color: rgba(121, 118, 118, .8);
-
+  background-color: rgba(34,34,34, .9);
+  border-bottom: .2rem solid white;
+  
 }
+.cardHeader h4{
+  padding: .5rem 1rem;
+  display:inline-block;
+  font-family: "Roboto",sans-serif;
+  font-size: 3rem;
+  text-decoration: underline;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.cardHeader h4:hover{
+  color: rgb(48, 43, 43);
+  cursor: pointer;
+  background-color: white;
+  transform: scale(1.1);
+  transition: .7s;
+  box-shadow: 5px 5px 10px black;
+}
+
 .cardRight p{
   flex: 1 1 50%;
   padding: 2rem;
   color: white;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   font-family: "Roboto", sans-serif;
-  text-shadow: .2rem .2rem 1rem black;
-  background-color: rgba(121, 118, 118, .8);
-}
-.githubBtn{
-  display: inline-block;
-  box-sizing: border-box;
-  text-decoration: none;
-  background-color: rgba(121, 118, 118, .8);
-  color: white;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 1.5rem;
-  margin: 1rem;
-  padding: .5rem 1rem;
-  border: 2px solid white;
-  border-radius: .5rem;
-  transition: none;
-}
-.githubBtn:hover{
-  background-color:white;
-  color: rgb(34,34,34);
-}
-.githubBtn:active{
-  animation: moveDown .05s;
-}
-@keyframes moveUp{
-  0%{
-    transform: translateY(0);
-  }
-
-  100%{
-    transform: translateY(-1rem);
-  }
-}
-@keyframes moveDown{
-  0%{
-    transform: translateY(0);
-  }
-
-  100%{
-    transform: translateY(.2rem);
-  }
+  text-shadow: .2rem .2rem .5rem black;
+  background-color: rgba(34,34,34, .9);
+  text-align: left;
 }
 @media screen and (max-width: 250px){
   .card{
@@ -132,10 +101,6 @@
   }
   .cardRight{
     border-left: none;
-    border-bottom: .2rem solid white;
-  }
-  .cardLeft{
-    background-color: rgba(121, 118, 118, .8);
   }
 }
 @media screen and (max-width: 375px){

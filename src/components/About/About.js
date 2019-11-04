@@ -19,7 +19,7 @@ const About = () => {
     window.addEventListener('scroll', handleScroll);
     //eslint-ignore-next-line
   },[]);
-  const alex = require('../../images/alex.jpg');
+  const alex = require('../../images/alex.png');
   return (
     <div ref={about} id= 'about' className={`${styles.about} flex-col section ${fade ? 'section-fadeIn' : 'section-fadeOut'}`}>
         <h4 className={styles.header}>Alex Ha</h4>

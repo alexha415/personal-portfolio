@@ -1,8 +1,7 @@
 import React, {useState, useEffect, useRef} from 'react'
 import styles from './ProjectCarousel.module.css';
-import {SocialIcon} from 'react-social-icons';
-import iconStyles from '../../layout/SocialIcons/SocialIcon.module.css';
-const ProjectCarousel = ({name, description, images, github}) => {
+
+const ProjectCarousel = ({images}) => {
   const carouselEl = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   
@@ -11,8 +10,8 @@ const ProjectCarousel = ({name, description, images, github}) => {
     if(newIndex < 0) {
       newIndex = 0;
     }
-    if(newIndex > images.length){
-      newIndex = images.length;
+    if(newIndex > images.length - 1){
+      newIndex = images.length - 1;
     }
     setCurrentIndex(newIndex);
   }
@@ -23,26 +22,30 @@ const ProjectCarousel = ({name, description, images, github}) => {
 
 
   return (
-    <div className={`${styles.carouselContainer}`}>
+    <div className={`${styles.carouselContainer} flex-col`}>
       <div ref={carouselEl} className={`${styles.carousel} flex-row`}>
-        <div className={`${styles.carouselItem} ${styles.landing} flex-col`}>
-          <h4>{name}</h4>
-          <p className={styles.description}>{description}</p>
-          <SocialIcon className={iconStyles.mediaIcon} url={github}></SocialIcon>
-        </div>
         {images.map(image => {
             return (
-              <div key={image} className={`${styles.carouselItem} flex-col`}>
+              <div key={image} className={`${styles.carouselItem}`}>
                 <img src={image} alt=""/>
               </div>
             )
           })
         }
       </div>
+      <div className={`${styles.legend} flex-row`}>
+        {images.map((image, index) => {
+          return (
+            <span key={image} className={`${index == currentIndex ? styles.activeSlide : ''} ${styles.legendButton}`} onClick={ () => {
+              setCurrentIndex(index);
+            }}></span>
+          )
+        })}
+      </div>
       <div className={`${styles.navigation}`}>
-        <div className={`${styles.leftNav}`} onClick={() => {onClick(-1)}}>
+        <div className={`${styles.nav} ${styles.leftNav}`} onClick={() => {onClick(-1)}}>
         </div>
-        <div className={`${styles.rightNav}`} onClick={() => {onClick(1)}}>
+        <div className={`${styles.nav} ${styles.rightNav}`} onClick={() => {onClick(1)}}>
         </div>
       </div>
     </div>

@@ -1,1 +1,3 @@
-This project was created with React.js to provide information about myself.
+Personal Portfolio for Alex Ha. This website was created using React.js. 
+
+https://alexha.herokuapp.com/

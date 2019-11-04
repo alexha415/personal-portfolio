@@ -1,5 +1,6 @@
 .header{
   display: inline-block;
+  width: fit-content;
   font-size: 5rem;
   font-family: "Roboto", sans-serif;
   color: white;
@@ -7,18 +8,19 @@
   text-shadow: .5rem .5rem 1rem black;
   margin-bottom: 2rem;
 }
-.list{
-  font-family: "Roboto", sans-serif;
-  list-style-type: none;
-  color:white;
-  font-size: 2rem;
-  box-shadow:.2rem .2rem 1rem black;
-  padding: 2rem;
-  margin-bottom: 5rem;
-  text-shadow: .1rem .1rem .5rem black;
+.listContainer{
+  background-color: rgb(48,43,43);
+
 }
-.list:last-child{
-  margin-bottom: 2rem;
+.list{
+  list-style-type: none;
+  margin: 2rem;
+}
+.list li{
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  color:white;
+  text-shadow: .1rem .1rem .5rem black;
 }
 .resume {
   padding: 10rem 2rem 0rem 2rem;
@@ -32,7 +34,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../../images/resume_bg.jpg');
+  background-image: url('../../images/resume_bg.png');
+  background-position-x: left;
+  background-size: cover;
+  background-repeat: no-repeat;
   z-index: -1;
   opacity: .8;
 }
